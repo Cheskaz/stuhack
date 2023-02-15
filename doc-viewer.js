@@ -7,9 +7,9 @@ function downloadDoc(){
 	height = pages[0].offsetHeight;
 
 	if (width > height){
-		print_opt = "{@page {size: A5 landscape;} body {zoom: 90%;}";
+		print_opt = "{@page {size: auto;}";
 	}else{
-		print_opt = "{@page {size: A5 landscape;}";
+		print_opt = "{@page {size: auto;}";
 	}
 
 	for(i=0; i<pages.length; i++){
